@@ -13,6 +13,7 @@ ${reset}
     --color-black: #000000;
     --color-text: #000000;
     --color-background: #ffffff;
+    --color-primary: #F2A6D6;
     --color-secondary: #F6E39F;
     --font-header: ${parisienneFont.style.fontFamily}, sans-serif;
     --font-text: ${firaSansCondensedFont.style.fontFamily}, sans-serif;

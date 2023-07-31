@@ -3,7 +3,7 @@
 import styled from "styled-components";
 
 type SpacerProps = {
-    times?: number;
+    $times?: number;
   };
   
   export const Spacer = styled.div<SpacerProps>`
@@ -12,7 +12,7 @@ type SpacerProps = {
     justify-content: center;
     width: 100%;
     max-width: 1400px;
-    height: calc(1em * ${({ times = 2 }) => times});
+    height: calc(1em * ${({ $times = 2 }) => $times});
     margin-left: auto;
     margin-right: auto;
   `;

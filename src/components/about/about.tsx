@@ -25,10 +25,10 @@ export const About = ({ data }: AboutProps) => {
           </AboutContent>
           <AboutImage>
             <Image
-              src={data.image}
+              src={data.image.src}
               width={520}
               height={551}
-              alt={data.imageAlt}
+              alt={data.image.alt}
             />
           </AboutImage>
         </AboutBody>
