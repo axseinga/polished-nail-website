@@ -2,14 +2,19 @@
 
 import styled, { createGlobalStyle } from "styled-components";
 import { BREAKPOINT_MOBILE } from "@/const/breakpoints";
+import reset from "styled-reset";
+import { parisienneFont, firaSansCondensedFont } from "./fonts";
 
 export const AppStyles = createGlobalStyle`
+${reset}
 
   :root {
     --color-white: #ffffff;
     --color-black: #000000;
     --color-text: #000000;
-    --color-background: #ffffff;;
+    --color-background: #ffffff;
+    --font-header: ${parisienneFont.style.fontFamily}, sans-serif;
+    --font-text: ${firaSansCondensedFont.style.fontFamily}, sans-serif;
   }
 
   * {
@@ -25,7 +30,7 @@ export const AppStyles = createGlobalStyle`
 
   html {
     font-size: 20px;
-    font-family: "Fira Sans Condensed", sans-serif;
+    font-family: var(--font-text);
     font-weight: normal;
     font-display: block;
     line-height: 1.2;
@@ -55,10 +60,18 @@ export const AppStyles = createGlobalStyle`
   main {
     position: relative;
   }
+
+  h1, p {
+    font-family: var(--font-text);
+  }
+
+  h2, h3 {
+    font-family: var(--font-header);
+  }
 `;
 
 export const Container = styled.div`
   inline-size: 100%;
-  max-inline-size: 72em;
+  max-inline-size: 1200px;
   margin-inline: auto;
 `;
