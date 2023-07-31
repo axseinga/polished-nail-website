@@ -13,6 +13,7 @@ ${reset}
     --color-black: #000000;
     --color-text: #000000;
     --color-background: #ffffff;
+    --color-secondary: #F6E39F;
     --font-header: ${parisienneFont.style.fontFamily}, sans-serif;
     --font-text: ${firaSansCondensedFont.style.fontFamily}, sans-serif;
   }
@@ -68,10 +69,8 @@ ${reset}
   h2, h3 {
     font-family: var(--font-header);
   }
-`;
 
-export const Container = styled.div`
-  inline-size: 100%;
-  max-inline-size: 1200px;
-  margin-inline: auto;
+  h2 {
+    font-size: 3em;
+  }
 `;

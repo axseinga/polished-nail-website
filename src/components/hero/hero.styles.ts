@@ -28,7 +28,7 @@ export const StyledHero = styled.header<StyledHero>`
       & span {
         font-size: 2.5em;
         font-family: var(--font-header);
-        margin-left: 12rem;
+        margin-left: 4.5em;
       }
     }
   }

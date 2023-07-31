@@ -1,5 +1,5 @@
 import { StyledHero } from "@/components/hero/hero.styles";
-import { Container } from "@/styles/app-styles";
+import { Container } from "@/styles/elements";
 import { HeroT } from "@/types";
 
 type HeroProps = {
