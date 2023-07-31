@@ -2,10 +2,14 @@
 
 import styled from "styled-components";
 
-export const StyledHero = styled.header`
+type StyledHero = {
+  $image: string;
+};
+
+export const StyledHero = styled.header<StyledHero>`
   width: 100%;
   height: 90vh;
-  background-image: url("/assets/hero.png");
+  background-image: ${({ $image }) => $image ? `url(${$image})` : `url("/assets/hero.png)`};
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

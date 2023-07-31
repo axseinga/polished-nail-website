@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import StyleSheet from "@/styles/style-sheet";
 import { AppStyles} from "@/styles/app-styles";
+import { Nav } from "@/components/nav/nav";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }: Props) {
       <body>
         <StyleSheet>
           <AppStyles />
+          <Nav/>
           <main>
             {children}
           </main>
